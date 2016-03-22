@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4321637F-0065-4E73-A72D-7BDAE4740B65}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>kpichart</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>게시\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>obj\Debug\</OutputPath>
+    <DocumentationFile>kpichart.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>kpichart.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.CalcEngine, Version=9.35.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Excel, Version=9.35.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Localization, Version=9.20.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.PDF, Version=9.35.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=9.35.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win, Version=9.35.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win.Chart, Version=9.35.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win.Spread, Version=9.35.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Framework.MultiRow, Version=2.2.20151.0, Culture=neutral, PublicKeyToken=fdd90f5c44b73170" />
+    <Reference Include="GrapeCity.Win.MultiRow, Version=8.20.20151.0, Culture=neutral, PublicKeyToken=0f7a722ee3c2bdd9" />
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=9.35.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="mysql.data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>mysql-connector-net-5.2.7-noinstall\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.visualstudio">
+      <HintPath>mysql-connector-net-5.2.7-noinstall\mysql.visualstudio.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="원무\Frm미수수납.Designer.vb">
+      <DependentUpon>Frm미수수납.vb</DependentUpon>
+    </Compile>
+    <Compile Include="원무\Frm미수수납.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="원무\Frm상병조회.Designer.vb">
+      <DependentUpon>Frm상병조회.vb</DependentUpon>
+    </Compile>
+    <Compile Include="원무\Frm상병조회.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="원무\Frm수가조회.Designer.vb">
+      <DependentUpon>Frm수가조회.vb</DependentUpon>
+    </Compile>
+    <Compile Include="원무\Frm수가조회.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="원무\frm수납메인.designer.vb">
+      <DependentUpon>frm수납메인.vb</DependentUpon>
+    </Compile>
+    <Compile Include="원무\frm수납메인.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="원무\Frm영수증.Designer.vb">
+      <DependentUpon>Frm영수증.vb</DependentUpon>
+    </Compile>
+    <Compile Include="원무\Frm영수증.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="원무\Frm예약관리.Designer.vb">
+      <DependentUpon>Frm예약관리.vb</DependentUpon>
+    </Compile>
+    <Compile Include="원무\Frm예약관리.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="원무\Frm유형변경.Designer.vb">
+      <DependentUpon>Frm유형변경.vb</DependentUpon>
+    </Compile>
+    <Compile Include="원무\Frm유형변경.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="원무\Frm자격조회.Designer.vb">
+      <DependentUpon>Frm자격조회.vb</DependentUpon>
+    </Compile>
+    <Compile Include="원무\Frm자격조회.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="원무\Frm제증명입력.Designer.vb">
+      <DependentUpon>Frm제증명입력.vb</DependentUpon>
+    </Compile>
+    <Compile Include="원무\Frm제증명입력.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="원무\Frm환불.Designer.vb">
+      <DependentUpon>Frm환불.vb</DependentUpon>
+    </Compile>
+    <Compile Include="원무\Frm환불.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="처방\frm진료실.designer.vb">
+      <DependentUpon>frm진료실.vb</DependentUpon>
+    </Compile>
+    <Compile Include="처방\frm진료실.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm메인.Designer.vb">
+      <DependentUpon>frm메인.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm메인.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="원무\frm접수메인.designer.vb">
+      <DependentUpon>frm접수메인.vb</DependentUpon>
+    </Compile>
+    <Compile Include="원무\frm접수메인.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="기초\frm약속처방등록.designer.vb">
+      <DependentUpon>frm약속처방등록.vb</DependentUpon>
+    </Compile>
+    <Compile Include="기초\frm약속처방등록.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mod공통.vb" />
+    <Compile Include="기초\frm수가등록.designer.vb">
+      <DependentUpon>frm수가등록.vb</DependentUpon>
+    </Compile>
+    <Compile Include="기초\frm수가등록.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="기초\frm사용자등록.designer.vb">
+      <DependentUpon>frm사용자등록.vb</DependentUpon>
+    </Compile>
+    <Compile Include="기초\frm사용자등록.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="기초\frm기본자료등록.designer.vb">
+      <DependentUpon>frm기본자료등록.vb</DependentUpon>
+    </Compile>
+    <Compile Include="기초\frm기본자료등록.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="원무\Frm미수수납.resx">
+      <DependentUpon>Frm미수수납.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="원무\Frm상병조회.resx">
+      <DependentUpon>Frm상병조회.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="원무\Frm수가조회.resx">
+      <DependentUpon>Frm수가조회.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="원무\frm수납메인.resx">
+      <DependentUpon>frm수납메인.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="원무\Frm영수증.resx">
+      <DependentUpon>Frm영수증.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="원무\Frm예약관리.resx">
+      <DependentUpon>Frm예약관리.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="원무\Frm유형변경.resx">
+      <DependentUpon>Frm유형변경.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="원무\Frm자격조회.resx">
+      <DependentUpon>Frm자격조회.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="원무\Frm제증명입력.resx">
+      <DependentUpon>Frm제증명입력.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="원무\Frm환불.resx">
+      <DependentUpon>Frm환불.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="처방\frm진료실.resx">
+      <DependentUpon>frm진료실.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm메인.resx">
+      <DependentUpon>frm메인.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="원무\frm접수메인.resx">
+      <DependentUpon>frm접수메인.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="기초\frm약속처방등록.resx">
+      <DependentUpon>frm약속처방등록.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="기초\frm수가등록.resx">
+      <DependentUpon>frm수가등록.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="기초\frm사용자등록.resx">
+      <DependentUpon>frm사용자등록.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="기초\frm기본자료등록.resx">
+      <DependentUpon>frm기본자료등록.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\저장.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\영수증9.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\취소1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\종료.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\심사화면.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\조회.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\변경.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\수정.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\수납.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\진행.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\청구현황.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diary.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\재계산9.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\접수.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\진행1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\청구현황1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoctorMale.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nurse.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\심사화면1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\처방.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\영수증91.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\재계산.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\식이코드.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\변경1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\출력1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="청구\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
