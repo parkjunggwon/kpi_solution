@@ -84,7 +84,7 @@ Public Class frm기본자료등록
             SqlStr = SqlStr & vbCrLf & "       '" + sprDisplay.Sheets(0).GetText(sprR, 4) + "',"
             SqlStr = SqlStr & vbCrLf & "       '" + "0000-00-00" + "',"
             SqlStr = SqlStr & vbCrLf & "       '" + IIf(sprDisplay.Sheets(0).GetText(sprR, 5) = False, "N", "Y") + "',"
-            SqlStr = SqlStr & vbCrLf & "       '" + m사용자.아이디 + "',"
+            SqlStr = SqlStr & vbCrLf & "       '"
             SqlStr = SqlStr & vbCrLf & "            now())"
 
             SqlStr = SqlStr & vbCrLf & "ON DUPLICATE KEY UPDATE"
@@ -92,7 +92,7 @@ Public Class frm기본자료등록
             SqlStr = SqlStr & vbCrLf & "   비고     ='" + sprDisplay.Sheets(0).GetText(sprR, 4) + "',"
             SqlStr = SqlStr & vbCrLf & "   적용일자 ='" + "0000-00-00" + "',"
             SqlStr = SqlStr & vbCrLf & "   사용여부 ='" + IIf(sprDisplay.Sheets(0).GetText(sprR, 5) = False, "N", "Y") + "',"
-            SqlStr = SqlStr & vbCrLf & "   조작자   ='" + m사용자.아이디 + "',"
+            SqlStr = SqlStr & vbCrLf & "   조작자   ="
             SqlStr = SqlStr & vbCrLf & "   조작일시 = now()"
 
             Call mSQLExec(SqlStr)
