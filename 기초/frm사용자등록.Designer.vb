@@ -22,61 +22,62 @@ Partial Class frm사용자등록
     '코드 편집기에서는 수정하지 마세요.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim TextCellType1 As FarPoint.Win.Spread.CellType.TextCellType = New FarPoint.Win.Spread.CellType.TextCellType()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.txt주소 = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txt우편번호 = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.txt생년월일 = New System.Windows.Forms.TextBox()
+        Me.txtpw = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.txt핸드폰 = New System.Windows.Forms.TextBox()
+        Me.txt연락처 = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cbo직위 = New System.Windows.Forms.ComboBox()
+        Me.cbo부서 = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.txt퇴사 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txt주민번호2 = New System.Windows.Forms.TextBox()
+        Me.txt주민번호1 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txt성명 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btn검색 = New System.Windows.Forms.Button()
         Me.txt아이디 = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.cbo면허종류 = New System.Windows.Forms.ComboBox()
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.txt면허번호 = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.cbo과목 = New System.Windows.Forms.ComboBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.txt성명1 = New System.Windows.Forms.TextBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.btn검색1 = New System.Windows.Forms.Button()
+        Me.cbo부서별 = New System.Windows.Forms.ComboBox()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.FpSpread1 = New FarPoint.Win.Spread.FpSpread()
         Me.FpSpread1_Sheet1 = New FarPoint.Win.Spread.SheetView()
         Me.Label20 = New System.Windows.Forms.Label()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.txt메모 = New System.Windows.Forms.TextBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.화면ClearToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.저장ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.종료ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.Label21 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -90,48 +91,49 @@ Partial Class frm사용자등록
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.TextBox11)
+        Me.Panel1.Controls.Add(Me.txt주소)
         Me.Panel1.Controls.Add(Me.Label15)
-        Me.Panel1.Controls.Add(Me.TextBox5)
+        Me.Panel1.Controls.Add(Me.txt우편번호)
         Me.Panel1.Controls.Add(Me.Label14)
-        Me.Panel1.Controls.Add(Me.TextBox10)
-        Me.Panel1.Controls.Add(Me.TextBox9)
+        Me.Panel1.Controls.Add(Me.txt생년월일)
+        Me.Panel1.Controls.Add(Me.txtpw)
         Me.Panel1.Controls.Add(Me.Label13)
-        Me.Panel1.Controls.Add(Me.TextBox8)
-        Me.Panel1.Controls.Add(Me.TextBox7)
+        Me.Panel1.Controls.Add(Me.txt핸드폰)
+        Me.Panel1.Controls.Add(Me.txt연락처)
         Me.Panel1.Controls.Add(Me.Label12)
         Me.Panel1.Controls.Add(Me.Label11)
-        Me.Panel1.Controls.Add(Me.ComboBox2)
-        Me.Panel1.Controls.Add(Me.ComboBox1)
+        Me.Panel1.Controls.Add(Me.cbo직위)
+        Me.Panel1.Controls.Add(Me.cbo부서)
         Me.Panel1.Controls.Add(Me.Label10)
         Me.Panel1.Controls.Add(Me.Label9)
-        Me.Panel1.Controls.Add(Me.TextBox6)
+        Me.Panel1.Controls.Add(Me.txt퇴사)
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.DateTimePicker1)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Panel4)
         Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.TextBox4)
-        Me.Panel1.Controls.Add(Me.TextBox2)
+        Me.Panel1.Controls.Add(Me.txt주민번호2)
+        Me.Panel1.Controls.Add(Me.txt주민번호1)
         Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.TextBox1)
+        Me.Panel1.Controls.Add(Me.txt성명)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.Button3)
+        Me.Panel1.Controls.Add(Me.btn검색)
         Me.Panel1.Controls.Add(Me.txt아이디)
         Me.Panel1.Location = New System.Drawing.Point(2, 40)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(311, 362)
         Me.Panel1.TabIndex = 0
         '
-        'TextBox11
+        'txt주소
         '
-        Me.TextBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox11.Location = New System.Drawing.Point(70, 251)
-        Me.TextBox11.Multiline = True
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(237, 42)
-        Me.TextBox11.TabIndex = 80
+        Me.txt주소.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt주소.ImeMode = System.Windows.Forms.ImeMode.Hangul
+        Me.txt주소.Location = New System.Drawing.Point(70, 251)
+        Me.txt주소.Multiline = True
+        Me.txt주소.Name = "txt주소"
+        Me.txt주소.Size = New System.Drawing.Size(237, 42)
+        Me.txt주소.TabIndex = 61
         '
         'Label15
         '
@@ -142,13 +144,14 @@ Partial Class frm사용자등록
         Me.Label15.TabIndex = 79
         Me.Label15.Text = "주  소"
         '
-        'TextBox5
+        'txt우편번호
         '
-        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox5.Location = New System.Drawing.Point(70, 217)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(106, 21)
-        Me.TextBox5.TabIndex = 78
+        Me.txt우편번호.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt우편번호.ImeMode = System.Windows.Forms.ImeMode.Hangul
+        Me.txt우편번호.Location = New System.Drawing.Point(70, 217)
+        Me.txt우편번호.Name = "txt우편번호"
+        Me.txt우편번호.Size = New System.Drawing.Size(106, 21)
+        Me.txt우편번호.TabIndex = 60
         '
         'Label14
         '
@@ -159,21 +162,22 @@ Partial Class frm사용자등록
         Me.Label14.TabIndex = 77
         Me.Label14.Text = "우편번호"
         '
-        'TextBox10
+        'txt생년월일
         '
-        Me.TextBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox10.Location = New System.Drawing.Point(70, 137)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(81, 21)
-        Me.TextBox10.TabIndex = 76
+        Me.txt생년월일.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt생년월일.Location = New System.Drawing.Point(70, 137)
+        Me.txt생년월일.Name = "txt생년월일"
+        Me.txt생년월일.Size = New System.Drawing.Size(81, 21)
+        Me.txt생년월일.TabIndex = 57
         '
-        'TextBox9
+        'txtpw
         '
-        Me.TextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox9.Location = New System.Drawing.Point(70, 57)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(81, 21)
-        Me.TextBox9.TabIndex = 75
+        Me.txtpw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtpw.Location = New System.Drawing.Point(70, 57)
+        Me.txtpw.MaxLength = 10
+        Me.txtpw.Name = "txtpw"
+        Me.txtpw.Size = New System.Drawing.Size(81, 21)
+        Me.txtpw.TabIndex = 53
         '
         'Label13
         '
@@ -184,21 +188,21 @@ Partial Class frm사용자등록
         Me.Label13.TabIndex = 74
         Me.Label13.Text = "Password"
         '
-        'TextBox8
+        'txt핸드폰
         '
-        Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox8.Location = New System.Drawing.Point(70, 190)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(106, 21)
-        Me.TextBox8.TabIndex = 73
+        Me.txt핸드폰.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt핸드폰.Location = New System.Drawing.Point(70, 190)
+        Me.txt핸드폰.Name = "txt핸드폰"
+        Me.txt핸드폰.Size = New System.Drawing.Size(106, 21)
+        Me.txt핸드폰.TabIndex = 59
         '
-        'TextBox7
+        'txt연락처
         '
-        Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox7.Location = New System.Drawing.Point(70, 164)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(106, 21)
-        Me.TextBox7.TabIndex = 72
+        Me.txt연락처.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt연락처.Location = New System.Drawing.Point(70, 164)
+        Me.txt연락처.Name = "txt연락처"
+        Me.txt연락처.Size = New System.Drawing.Size(106, 21)
+        Me.txt연락처.TabIndex = 58
         '
         'Label12
         '
@@ -218,21 +222,23 @@ Partial Class frm사용자등록
         Me.Label11.TabIndex = 70
         Me.Label11.Text = "연락처"
         '
-        'ComboBox2
+        'cbo직위
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(212, 326)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(77, 20)
-        Me.ComboBox2.TabIndex = 69
+        Me.cbo직위.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbo직위.FormattingEnabled = True
+        Me.cbo직위.Location = New System.Drawing.Point(212, 326)
+        Me.cbo직위.Name = "cbo직위"
+        Me.cbo직위.Size = New System.Drawing.Size(77, 20)
+        Me.cbo직위.TabIndex = 65
         '
-        'ComboBox1
+        'cbo부서
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(68, 325)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(83, 20)
-        Me.ComboBox1.TabIndex = 68
+        Me.cbo부서.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbo부서.FormattingEnabled = True
+        Me.cbo부서.Location = New System.Drawing.Point(68, 325)
+        Me.cbo부서.Name = "cbo부서"
+        Me.cbo부서.Size = New System.Drawing.Size(83, 20)
+        Me.cbo부서.TabIndex = 64
         '
         'Label10
         '
@@ -252,13 +258,13 @@ Partial Class frm사용자등록
         Me.Label9.TabIndex = 66
         Me.Label9.Text = "담당부서"
         '
-        'TextBox6
+        'txt퇴사
         '
-        Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox6.Location = New System.Drawing.Point(210, 299)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(81, 21)
-        Me.TextBox6.TabIndex = 65
+        Me.txt퇴사.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt퇴사.Location = New System.Drawing.Point(210, 299)
+        Me.txt퇴사.Name = "txt퇴사"
+        Me.txt퇴사.Size = New System.Drawing.Size(81, 21)
+        Me.txt퇴사.TabIndex = 63
         '
         'Label8
         '
@@ -277,7 +283,7 @@ Partial Class frm사용자등록
         Me.DateTimePicker1.Location = New System.Drawing.Point(70, 301)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(81, 21)
-        Me.DateTimePicker1.TabIndex = 63
+        Me.DateTimePicker1.TabIndex = 62
         '
         'Label7
         '
@@ -316,21 +322,23 @@ Partial Class frm사용자등록
         Me.Label4.TabIndex = 59
         Me.Label4.Text = "생년월일"
         '
-        'TextBox4
+        'txt주민번호2
         '
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.Location = New System.Drawing.Point(150, 109)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(109, 21)
-        Me.TextBox4.TabIndex = 58
+        Me.txt주민번호2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt주민번호2.Location = New System.Drawing.Point(150, 109)
+        Me.txt주민번호2.MaxLength = 7
+        Me.txt주민번호2.Name = "txt주민번호2"
+        Me.txt주민번호2.Size = New System.Drawing.Size(109, 21)
+        Me.txt주민번호2.TabIndex = 56
         '
-        'TextBox2
+        'txt주민번호1
         '
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Location = New System.Drawing.Point(70, 109)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(81, 21)
-        Me.TextBox2.TabIndex = 57
+        Me.txt주민번호1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt주민번호1.Location = New System.Drawing.Point(70, 109)
+        Me.txt주민번호1.MaxLength = 6
+        Me.txt주민번호1.Name = "txt주민번호1"
+        Me.txt주민번호1.Size = New System.Drawing.Size(81, 21)
+        Me.txt주민번호1.TabIndex = 55
         '
         'Label3
         '
@@ -341,13 +349,14 @@ Partial Class frm사용자등록
         Me.Label3.TabIndex = 56
         Me.Label3.Text = "주민번호"
         '
-        'TextBox1
+        'txt성명
         '
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Location = New System.Drawing.Point(70, 82)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(81, 21)
-        Me.TextBox1.TabIndex = 55
+        Me.txt성명.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt성명.Location = New System.Drawing.Point(70, 82)
+        Me.txt성명.MaxLength = 10
+        Me.txt성명.Name = "txt성명"
+        Me.txt성명.Size = New System.Drawing.Size(81, 21)
+        Me.txt성명.TabIndex = 54
         '
         'Label2
         '
@@ -367,28 +376,29 @@ Partial Class frm사용자등록
         Me.Label1.TabIndex = 53
         Me.Label1.Text = "아이디"
         '
-        'Button3
+        'btn검색
         '
-        Me.Button3.Location = New System.Drawing.Point(152, 29)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 24)
-        Me.Button3.TabIndex = 52
-        Me.Button3.Text = "아이디검색"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btn검색.Location = New System.Drawing.Point(152, 29)
+        Me.btn검색.Name = "btn검색"
+        Me.btn검색.Size = New System.Drawing.Size(75, 24)
+        Me.btn검색.TabIndex = 52
+        Me.btn검색.Text = "아이디검색"
+        Me.btn검색.UseVisualStyleBackColor = True
         '
         'txt아이디
         '
         Me.txt아이디.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txt아이디.Location = New System.Drawing.Point(70, 31)
+        Me.txt아이디.MaxLength = 10
         Me.txt아이디.Name = "txt아이디"
         Me.txt아이디.Size = New System.Drawing.Size(81, 21)
         Me.txt아이디.TabIndex = 51
         '
         'Panel2
         '
-        Me.Panel2.Controls.Add(Me.ComboBox4)
+        Me.Panel2.Controls.Add(Me.cbo면허종류)
         Me.Panel2.Controls.Add(Me.Label18)
-        Me.Panel2.Controls.Add(Me.TextBox12)
+        Me.Panel2.Controls.Add(Me.txt면허번호)
         Me.Panel2.Controls.Add(Me.Label17)
         Me.Panel2.Controls.Add(Me.cbo과목)
         Me.Panel2.Controls.Add(Me.Label16)
@@ -398,13 +408,16 @@ Partial Class frm사용자등록
         Me.Panel2.Size = New System.Drawing.Size(292, 128)
         Me.Panel2.TabIndex = 1
         '
-        'ComboBox4
+        'cbo면허종류
         '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(74, 89)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(121, 20)
-        Me.ComboBox4.TabIndex = 68
+        Me.cbo면허종류.DisplayMember = "한의사"
+        Me.cbo면허종류.FormattingEnabled = True
+        Me.cbo면허종류.Items.AddRange(New Object() {"한의사", "의사"})
+        Me.cbo면허종류.Location = New System.Drawing.Point(74, 89)
+        Me.cbo면허종류.Name = "cbo면허종류"
+        Me.cbo면허종류.Size = New System.Drawing.Size(121, 20)
+        Me.cbo면허종류.TabIndex = 68
+        Me.cbo면허종류.Text = "한의사"
         '
         'Label18
         '
@@ -415,13 +428,13 @@ Partial Class frm사용자등록
         Me.Label18.TabIndex = 67
         Me.Label18.Text = "면허종류"
         '
-        'TextBox12
+        'txt면허번호
         '
-        Me.TextBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox12.Location = New System.Drawing.Point(74, 60)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(81, 21)
-        Me.TextBox12.TabIndex = 66
+        Me.txt면허번호.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt면허번호.Location = New System.Drawing.Point(74, 60)
+        Me.txt면허번호.Name = "txt면허번호"
+        Me.txt면허번호.Size = New System.Drawing.Size(81, 21)
+        Me.txt면허번호.TabIndex = 67
         '
         'Label17
         '
@@ -434,11 +447,12 @@ Partial Class frm사용자등록
         '
         'cbo과목
         '
+        Me.cbo과목.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbo과목.FormattingEnabled = True
         Me.cbo과목.Location = New System.Drawing.Point(74, 34)
         Me.cbo과목.Name = "cbo과목"
         Me.cbo과목.Size = New System.Drawing.Size(121, 20)
-        Me.cbo과목.TabIndex = 64
+        Me.cbo과목.TabIndex = 66
         '
         'Label16
         '
@@ -472,32 +486,51 @@ Partial Class frm사용자등록
         '
         Me.Panel6.BackColor = System.Drawing.Color.PeachPuff
         Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel6.Controls.Add(Me.TextBox14)
+        Me.Panel6.Controls.Add(Me.txt성명1)
         Me.Panel6.Controls.Add(Me.Label21)
-        Me.Panel6.Controls.Add(Me.Button1)
-        Me.Panel6.Controls.Add(Me.ComboBox5)
+        Me.Panel6.Controls.Add(Me.btn검색1)
+        Me.Panel6.Controls.Add(Me.cbo부서별)
         Me.Panel6.Controls.Add(Me.Label19)
         Me.Panel6.Location = New System.Drawing.Point(2, 408)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(605, 25)
         Me.Panel6.TabIndex = 62
         '
-        'Button1
+        'txt성명1
         '
-        Me.Button1.Location = New System.Drawing.Point(521, -1)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 70
-        Me.Button1.Text = "검색"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.txt성명1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt성명1.ImeMode = System.Windows.Forms.ImeMode.Hangul
+        Me.txt성명1.Location = New System.Drawing.Point(439, 1)
+        Me.txt성명1.Name = "txt성명1"
+        Me.txt성명1.Size = New System.Drawing.Size(81, 21)
+        Me.txt성명1.TabIndex = 71
         '
-        'ComboBox5
+        'Label21
         '
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Location = New System.Drawing.Point(75, 1)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(121, 20)
-        Me.ComboBox5.TabIndex = 69
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(395, 6)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(37, 12)
+        Me.Label21.TabIndex = 71
+        Me.Label21.Text = "성  명"
+        '
+        'btn검색1
+        '
+        Me.btn검색1.Location = New System.Drawing.Point(521, -1)
+        Me.btn검색1.Name = "btn검색1"
+        Me.btn검색1.Size = New System.Drawing.Size(75, 23)
+        Me.btn검색1.TabIndex = 72
+        Me.btn검색1.Text = "검색"
+        Me.btn검색1.UseVisualStyleBackColor = True
+        '
+        'cbo부서별
+        '
+        Me.cbo부서별.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbo부서별.FormattingEnabled = True
+        Me.cbo부서별.Location = New System.Drawing.Point(75, 1)
+        Me.cbo부서별.Name = "cbo부서별"
+        Me.cbo부서별.Size = New System.Drawing.Size(121, 20)
+        Me.cbo부서별.TabIndex = 70
         '
         'Label19
         '
@@ -525,7 +558,7 @@ Partial Class frm사용자등록
         Me.FpSpread1.Name = "FpSpread1"
         Me.FpSpread1.Sheets.AddRange(New FarPoint.Win.Spread.SheetView() {Me.FpSpread1_Sheet1})
         Me.FpSpread1.Size = New System.Drawing.Size(598, 331)
-        Me.FpSpread1.TabIndex = 0
+        Me.FpSpread1.TabIndex = 73
         '
         'FpSpread1_Sheet1
         '
@@ -556,6 +589,8 @@ Partial Class frm사용자등록
         Me.FpSpread1_Sheet1.Columns.Get(4).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Left
         Me.FpSpread1_Sheet1.Columns.Get(4).Label = "직위"
         Me.FpSpread1_Sheet1.Columns.Get(4).Width = 71.0!
+        TextCellType1.AllowEditorVerticalAlign = True
+        Me.FpSpread1_Sheet1.Columns.Get(5).CellType = TextCellType1
         Me.FpSpread1_Sheet1.Columns.Get(5).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center
         Me.FpSpread1_Sheet1.Columns.Get(5).Label = "입사일자"
         Me.FpSpread1_Sheet1.Columns.Get(5).Width = 71.0!
@@ -574,14 +609,15 @@ Partial Class frm사용자등록
         Me.Label20.TabIndex = 66
         Me.Label20.Text = "메모"
         '
-        'TextBox13
+        'txt메모
         '
-        Me.TextBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox13.Location = New System.Drawing.Point(321, 217)
-        Me.TextBox13.Multiline = True
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(283, 42)
-        Me.TextBox13.TabIndex = 81
+        Me.txt메모.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt메모.ImeMode = System.Windows.Forms.ImeMode.Hangul
+        Me.txt메모.Location = New System.Drawing.Point(321, 217)
+        Me.txt메모.Multiline = True
+        Me.txt메모.Name = "txt메모"
+        Me.txt메모.Size = New System.Drawing.Size(283, 42)
+        Me.txt메모.TabIndex = 69
         '
         'MenuStrip1
         '
@@ -590,7 +626,7 @@ Partial Class frm사용자등록
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.MenuStrip1.Size = New System.Drawing.Size(610, 39)
+        Me.MenuStrip1.Size = New System.Drawing.Size(610, 36)
         Me.MenuStrip1.TabIndex = 82
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -598,7 +634,7 @@ Partial Class frm사용자등록
         '
         Me.화면ClearToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.취소1
         Me.화면ClearToolStripMenuItem.Name = "화면ClearToolStripMenuItem"
-        Me.화면ClearToolStripMenuItem.Size = New System.Drawing.Size(70, 35)
+        Me.화면ClearToolStripMenuItem.Size = New System.Drawing.Size(71, 32)
         Me.화면ClearToolStripMenuItem.Text = "화면Clear"
         Me.화면ClearToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
@@ -606,7 +642,7 @@ Partial Class frm사용자등록
         '
         Me.저장ToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.저장
         Me.저장ToolStripMenuItem.Name = "저장ToolStripMenuItem"
-        Me.저장ToolStripMenuItem.Size = New System.Drawing.Size(51, 35)
+        Me.저장ToolStripMenuItem.Size = New System.Drawing.Size(49, 32)
         Me.저장ToolStripMenuItem.Text = "저  장"
         Me.저장ToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
@@ -614,33 +650,16 @@ Partial Class frm사용자등록
         '
         Me.종료ToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.종료
         Me.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem"
-        Me.종료ToolStripMenuItem.Size = New System.Drawing.Size(51, 35)
+        Me.종료ToolStripMenuItem.Size = New System.Drawing.Size(49, 32)
         Me.종료ToolStripMenuItem.Text = "종  료"
         Me.종료ToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        '
-        'TextBox14
-        '
-        Me.TextBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox14.Location = New System.Drawing.Point(439, 1)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(81, 21)
-        Me.TextBox14.TabIndex = 72
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(395, 6)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(37, 12)
-        Me.Label21.TabIndex = 71
-        Me.Label21.Text = "성  명"
         '
         'frm사용자등록
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(610, 780)
-        Me.Controls.Add(Me.TextBox13)
+        Me.Controls.Add(Me.txt메모)
         Me.Controls.Add(Me.Label20)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel6)
@@ -672,57 +691,57 @@ Partial Class frm사용자등록
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btn검색 As Button
     Friend WithEvents txt아이디 As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txt주민번호2 As TextBox
+    Friend WithEvents txt주민번호1 As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txt성명 As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents txt퇴사 As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents txt주소 As TextBox
     Friend WithEvents Label15 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txt우편번호 As TextBox
     Friend WithEvents Label14 As Label
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents txt생년월일 As TextBox
+    Friend WithEvents txtpw As TextBox
     Private WithEvents Label13 As Label
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents txt핸드폰 As TextBox
+    Friend WithEvents txt연락처 As TextBox
     Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cbo직위 As ComboBox
+    Friend WithEvents cbo부서 As ComboBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents cbo면허종류 As ComboBox
     Friend WithEvents Label18 As Label
-    Friend WithEvents TextBox12 As TextBox
+    Friend WithEvents txt면허번호 As TextBox
     Friend WithEvents Label17 As Label
     Friend WithEvents cbo과목 As ComboBox
     Friend WithEvents Label16 As Label
     Friend WithEvents Panel6 As Panel
-    Friend WithEvents ComboBox5 As ComboBox
+    Friend WithEvents cbo부서별 As ComboBox
     Friend WithEvents Label19 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btn검색1 As Button
     Friend WithEvents Panel3 As Panel
     Friend WithEvents FpSpread1 As FarPoint.Win.Spread.FpSpread
     Friend WithEvents FpSpread1_Sheet1 As FarPoint.Win.Spread.SheetView
     Friend WithEvents Label20 As Label
-    Friend WithEvents TextBox13 As TextBox
+    Friend WithEvents txt메모 As TextBox
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents 화면ClearToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents 저장ToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents 종료ToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TextBox14 As TextBox
+    Friend WithEvents txt성명1 As TextBox
     Friend WithEvents Label21 As Label
 End Class
