@@ -115,3 +115,8 @@ C:\Users\KPI50213491\Documents\GitHub\kpi_solution\obj\Debug\kpichart.exe.config
 C:\Users\KPI50213491\Documents\GitHub\kpi_solution\obj\Debug\kpichart.exe
 C:\Users\KPI50213491\Documents\GitHub\kpi_solution\obj\Debug\kpichart.xml
 C:\Users\KPI50213491\Documents\GitHub\kpi_solution\obj\Debug\kpichart.pdb
+C:\kpi\kpi_solution\obj\Debug\kpichart.vbproj.ResolveComReference.cache
+C:\kpi\kpi_solution\obj\Debug\kpichart.exe.config
+C:\kpi\kpi_solution\obj\Debug\kpichart.exe
+C:\kpi\kpi_solution\obj\Debug\kpichart.xml
+C:\kpi\kpi_solution\obj\Debug\kpichart.pdb

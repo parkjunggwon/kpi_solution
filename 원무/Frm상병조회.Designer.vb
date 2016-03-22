@@ -96,7 +96,7 @@ Partial Class Frm상병조회
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.MenuStrip1.Size = New System.Drawing.Size(640, 39)
+        Me.MenuStrip1.Size = New System.Drawing.Size(640, 36)
         Me.MenuStrip1.TabIndex = 79
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -104,7 +104,7 @@ Partial Class Frm상병조회
         '
         Me.화면ClearToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.취소1
         Me.화면ClearToolStripMenuItem.Name = "화면ClearToolStripMenuItem"
-        Me.화면ClearToolStripMenuItem.Size = New System.Drawing.Size(70, 35)
+        Me.화면ClearToolStripMenuItem.Size = New System.Drawing.Size(71, 32)
         Me.화면ClearToolStripMenuItem.Text = "화면Clear"
         Me.화면ClearToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
@@ -112,7 +112,7 @@ Partial Class Frm상병조회
         '
         Me.내상병저장ToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.저장
         Me.내상병저장ToolStripMenuItem.Name = "내상병저장ToolStripMenuItem"
-        Me.내상병저장ToolStripMenuItem.Size = New System.Drawing.Size(79, 35)
+        Me.내상병저장ToolStripMenuItem.Size = New System.Drawing.Size(77, 32)
         Me.내상병저장ToolStripMenuItem.Text = "내상병저장"
         Me.내상병저장ToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
@@ -120,7 +120,7 @@ Partial Class Frm상병조회
         '
         Me.내상병조회ToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.조회
         Me.내상병조회ToolStripMenuItem.Name = "내상병조회ToolStripMenuItem"
-        Me.내상병조회ToolStripMenuItem.Size = New System.Drawing.Size(79, 35)
+        Me.내상병조회ToolStripMenuItem.Size = New System.Drawing.Size(77, 32)
         Me.내상병조회ToolStripMenuItem.Text = "내상병조회"
         Me.내상병조회ToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
@@ -128,7 +128,7 @@ Partial Class Frm상병조회
         '
         Me.종료ToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.종료
         Me.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem"
-        Me.종료ToolStripMenuItem.Size = New System.Drawing.Size(51, 35)
+        Me.종료ToolStripMenuItem.Size = New System.Drawing.Size(49, 32)
         Me.종료ToolStripMenuItem.Text = "종  료"
         Me.종료ToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '

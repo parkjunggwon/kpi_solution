@@ -1,8 +1,6 @@
 ﻿Public Class Frm상병조회
-    '박정권테스트
+
     Private sang As New List(Of String)() '배열 (의사리스트)
-
-
 
     Private Sub 종료ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 종료ToolStripMenuItem.Click
         Me.Dispose()
@@ -192,4 +190,7 @@ ErrRtn:
         End If
     End Sub
 
+    Private Sub Fps상병분류_CellClick(sender As Object, e As FarPoint.Win.Spread.CellClickEventArgs) Handles Fps상병분류.CellClick
+
+    End Sub
 End Class
