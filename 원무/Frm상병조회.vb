@@ -1,5 +1,5 @@
 ﻿Public Class Frm상병조회
-
+    '박정권테스트
     Private sang As New List(Of String)() '배열 (의사리스트)
 
 
@@ -191,4 +191,5 @@ ErrRtn:
             Fps상병분류.Sheets(0).RowCount = 0
         End If
     End Sub
+
 End Class
